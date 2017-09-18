@@ -14,12 +14,12 @@
       </div>
     <% end %>
     <p>
-      <%= form.label :text %><br>
-      <%= form.text_area :content, placeholder: "Content" %>
-    </p>
-    <p>
       <%= form.label :title %><br>
       <%= form.text_field :title, placeholder: "Title" %>
+    </p>
+    <p>
+      <%= form.label :text %><br>
+      <%= form.text_area :content, placeholder: "Content" %>
     </p>
     <p>
       <%= form.submit value: "Create Article" %>
