@@ -9,8 +9,6 @@ development:
 test: &test
   <<: *default
   database: rails_demo_aug_test
-  username: rails_demo_aug
-  password: <%= ENV['RAILS_DEMO_AUG_DATABASE_PASSWORD'] %>
 
 production:
   <<: *default
