@@ -3,5 +3,4 @@ Given(/^I have an article with title "([^"]*)" and content "([^"]*)"$/) do |titl
   article.title = title
   article.content = content
   article.save
-  # binding.pry
 end
