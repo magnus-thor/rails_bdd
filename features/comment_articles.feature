@@ -18,4 +18,4 @@ Scenario: Reader leaves a field empty [Sad Path]
   Then I fill in "Name" with ""
   And I fill in "Comment" with ""
   Then I click "Create Comment" button
-  Then I should see "warning message"
+  Then I should see "Comments is invalid"
