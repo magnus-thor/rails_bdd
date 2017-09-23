@@ -8,6 +8,6 @@ Background:
 
 Scenario: Reader leaves a comment
   Given I click "Show" button
-  Then I fill in "name" with "Magnus"
-  And I fill in "comment" with "This is my comment on article"
-  Then I click "Submit" button
+  Then I fill in "Name" with "Magnus"
+  And I fill in "Comment" with "This is my comment on article"
+  Then I click "Create Comment" button
