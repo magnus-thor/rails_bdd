@@ -12,3 +12,10 @@ Scenario: Reader leaves a comment
   And I fill in "Comment" with "This is my comment on article"
   Then I click "Create Comment" button
   Then I should see "This is my comment on article"
+
+Scenario: Reader leaves a field empty [Sad Path]
+  Given I click "Show" button
+  Then I fill in "Name" with ""
+  And I fill in "Comment" with ""
+  Then I click "Create Comment" button
+  Then I should see "warning message"
