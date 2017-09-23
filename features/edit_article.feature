@@ -12,3 +12,13 @@ Scenario: Edit an article [Happy Path]
   Then I should be on "Edit Article" page
   When I fill in "Title" with "new title"
   And I fill in "Content" with "replacement text"
+
+Scenario: Edit an article [Sad Path]
+  When I click "Edit" button
+  Then I should be on "Edit Article" page
+  When I fill in "Title" with ""
+  And I fill in "Content" with ""
+  And I click "Create Article" button
+  Then I should see "Title can't be blank"
+  And I should see "Title is too short (minimum is 5 characters)"
+  And I should see "Content can't be blank"
