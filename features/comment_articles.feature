@@ -11,3 +11,4 @@ Scenario: Reader leaves a comment
   Then I fill in "Name" with "Magnus"
   And I fill in "Comment" with "This is my comment on article"
   Then I click "Create Comment" button
+  Then I should see "This is my comment on article"
