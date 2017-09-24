@@ -12,7 +12,7 @@
     <% if !comment.email.empty? %>
         <p>
           <strong>Email: </strong>
-          <%= comment.email %>
+          <%= mail_to comment.email %>
         </p>
     <% end %>
 <% end %>
