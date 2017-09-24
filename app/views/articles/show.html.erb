@@ -16,10 +16,14 @@
       <strong>Comment: </strong>
       <%= comment.body %>
     </p>
+    <p>
+      <strong>Email: </strong>
+      <%= comment.email %>
+    </p>
 <% end %>
 
 <h2>Add a comment: </h2>
-<%= form_with(model: [ @comment, @article, @article.comments.build ], local: true) do |form| %>
+<%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
     <p>
       <%= form.label :commenter %><br>
       <%= form.text_field :commenter, placeholder: 'Name' %>
@@ -30,7 +34,7 @@
     </p>
     <p>
       <%= form.label :email %><br>
-      <%= form.text_field :email, placeholder: 'Email' %>
+      <%= form.text_field :email, placeholder: 'Email', type: 'email'%>
     </p>
     <p>
       <%= form.submit %>
