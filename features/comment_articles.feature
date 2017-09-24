@@ -26,4 +26,4 @@ Scenario: Reader leaves a field empty [Sad Path]
     And I fill in "Comment" with "This is my comment on article"
     And I fill in "Email" with "maggi@test.com"
     Then I click "Create Comment" button
-    Then I should see "maggi@test.com"
+    And I click "maggi@test.com"
