@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/magnus/projects/rails_demo_aug/spec/models/article_spec.rb": [
+      "/home/magnus/projects/rails_demo_aug/spec/models/comment_spec.rb": [
         1,
         null,
         1,
@@ -9,17 +9,14 @@
         2,
         2,
         2,
-        null,
-        null,
-        1,
         2,
         2,
         null,
         null,
         1,
-        1,
-        1,
-        null,
+        2,
+        2,
+        2,
         null,
         null
       ],
@@ -258,7 +255,8 @@
         1,
         null
       ],
-      "/home/magnus/projects/rails_demo_aug/app/models/article.rb": [
+      "/home/magnus/projects/rails_demo_aug/app/models/comment.rb": [
+        1,
         1,
         1,
         1,
@@ -269,34 +267,8 @@
         1,
         1,
         null
-      ],
-      "/home/magnus/projects/rails_demo_aug/spec/models/comment_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
-        2,
-        null,
-        null
-      ],
-      "/home/magnus/projects/rails_demo_aug/app/models/comment.rb": [
-        1,
-        1,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1506239344
+    "timestamp": 1506241047
   }
 }
