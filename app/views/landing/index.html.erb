@@ -1,13 +1,12 @@
-<h1> Hello Rails</h1>
-<%= link_to 'My Blog', controller: 'articles' %>
+ <div class="landing_page">
+    <%=link_to 'My Blog', controller: 'articles' %>
 
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <%= article.title %><br />
-      <%= article.content %>
-    </li>
-  <% end %>
-</ul>
-
-<a href="/articles/new">New Article</a>
+    <ul>
+      <% @articles.each do |article| %>
+          <li>
+            <%= article.title %><br />
+            <%= article.content %>
+          </li>
+      <% end %>
+    </ul>
+  </div>

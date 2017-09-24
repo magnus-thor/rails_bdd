@@ -11,13 +11,28 @@
 
 <h2>Add a comment: </h2>
 <%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
+    <% unless @comment == nil %>
+      <% if @comment.errors.any? %>
+          <div id='error_explanation'>
+            <h2>
+              <%= pluralize(@comment.errors.count, 'error') %>
+            </h2>
+            <ul>
+              <% @comment.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+    <% end %>
+
     <p>
       <%= form.label :commenter %><br>
       <%= form.text_field :commenter, placeholder: 'Name' %>
     </p>
     <p>
       <%= form.label :body %><br>
-      <%= form.text_field :body, placeholder: 'Comment' %>
+      <%= form.text_field :body, placeholder: 'Comment', rows: 5, cols: 10 %>
     </p>
     <p>
       <%= form.label :email %><br>

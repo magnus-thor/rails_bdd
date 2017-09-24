@@ -18,7 +18,9 @@ Scenario: Reader leaves a field empty [Sad Path]
   Then I fill in "Name" with ""
   And I fill in "Comment" with ""
   Then I click "Create Comment" button
-#  Then I should see "Comments is invalid"
+  Then I should see "Commenter can't be blank"
+  Then I should see "Commenter is too short (minimum is 5 characters)"
+  Then I should see "Body can't be blank"
 
   Scenario: Reader leaves an email
     Given I click "Show" button

@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+input_body {
+    color: green;
+}
+
+.comment_box {
+    border: solid;
+    height: auto;
+    width: 350px;
+}
+
+.textbox {
+    rows: 10;
+}
