@@ -1,0 +1,18 @@
+<p>
+  <strong>Commenter:</strong>
+  <%= comment.commenter %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= comment.body %>
+</p>
+
+<% if comment.email != nil %>
+    <% if !comment.email.empty? %>
+        <p>
+          <strong>Email: </strong>
+          <%= comment.email %>
+        </p>
+    <% end %>
+<% end %>
