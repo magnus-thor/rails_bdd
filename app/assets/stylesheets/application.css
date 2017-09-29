@@ -14,14 +14,17 @@
  *= require_self
  */
 
-input_body {
-    color: green;
+
+.landing_page {
+    padding-top: 50px;
 }
 
 .comment_box {
     border: solid;
     height: auto;
     width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .textbox {

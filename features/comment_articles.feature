@@ -29,3 +29,4 @@ Scenario: Reader leaves a field empty [Sad Path]
     And I fill in "Email" with "maggi@test.com"
     And I click "Create Comment" button
     Then I should have mailto link with "maggi@test.com"
+
