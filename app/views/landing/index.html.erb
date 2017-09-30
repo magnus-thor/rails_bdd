@@ -3,6 +3,7 @@
     <ul>
       <% @articles.each do |article| %>
           <li><%= article.title %></li>
+          <td><%= "Written by #{article.author} at #{article.created_at.strftime("%Y-%m-%e")}" %></td>
           <li><%= article.content %></li>
       <% end %>
     </ul>
